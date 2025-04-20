@@ -1,0 +1,67 @@
+html {
+
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(
+    to top, #09203f 0%,
+    #537895 100%
+        /* former gradients:
+        rgb(230, 100, 101), 
+        rgb(145, 152, 229)
+        */
+    );
+
+}
+
+#container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#navigation {
+    margin: 50px 0 0 50px; 
+    align-items: left;
+    justify-content: left;
+}
+
+button {
+    font-family: Overpass;
+    border: solid 3px black;
+    border-radius: 15%;
+    background: transparent;
+    
+}
+
+#avatarhead {
+    margin: 100px 0 0 0;
+    text-align: center;
+}
+
+#profileimage {
+    border-radius: 20%;
+}
+
+#username {
+    font-family: monospace;
+    text-decoration: none;
+    color: white;
+}
+
+#quote-text, #quote-author{
+    font-family:
+        'Lucida Sans', 
+        'Lucida Sans Regular', 
+        'Lucida Grande',
+        Verdana,
+        Arial, 
+        Overpass;
+    font-display: Arial; 
+}
+
+#quote-text {
+    font-style: oblique;
+}

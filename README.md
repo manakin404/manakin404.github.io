@@ -1,2 +1,2 @@
 # manakin404.github.io
-my github user page
+My personal themed website (profile )
