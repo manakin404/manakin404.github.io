@@ -1,9 +1,10 @@
 html {
-
+    height: 100%;
+    width: 100%;
 }
 
 body {
-    width: 100vw;
+    margin: 0;
     height: 100vh;
     background: linear-gradient(
     to top, #09203f 0%,
@@ -12,20 +13,14 @@ body {
         rgb(230, 100, 101), 
         rgb(145, 152, 229)
         */
-    );
-
+    ) fixed;
+    overflow: auto;
 }
 
 #container {
     align-items: center;
     justify-content: center;
     text-align: center;
-}
-
-#navigation {
-    margin: 50px 0 0 50px; 
-    align-items: left;
-    justify-content: left;
 }
 
 button {
@@ -37,7 +32,7 @@ button {
 }
 
 #avatarhead {
-    margin: 100px 0 0 0;
+    padding: 100px 0 0 0;
     text-align: center;
 }
 
