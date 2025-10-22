@@ -1,30 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8" />
+        <title>manakin's portfolio website</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <!-- Import Devicons -->
+        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    </head>
 
-<head> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <title>manakin's alchemist dungeon</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
+    <body>
+        <div class="container">
+            <!-- Left sidebar -->
+            <div class="sidebar">
+                <div class="profile-section">
+                    <img src="assets/icons/catavatar.jpg" class="profile-image" alt="manakin's avatar"/>
+                    <h1 class="username">@manakin</h1>
+                    <a href="https://github.com/manakin404" target="_blank" class="github-button">
+                        <i class="devicon-github-original"></i>
+                        GitHub
+                    </a>
+                </div>
 
-<body>
+                <!-- Section for quotes in sidebar -->
+                <div class="quote-section">
+                    <span id="quote-text"></span>
+                    <span id="quote-author"></span>
+                </div>
+            </div>
 
-<div id="container">
-    <section id="avatarhead">
-        <img src="assets/catavatar.jpg" id="profileimage" height="200" width="200" alt="manakin's avatar">
-        <h2><a href="https://github.com/manakin404" target="_blank" id="username">@manakin</a></h2>
-    </section>
-    <section id="poetry" style="border: 0;">
-        <span id="quote-text"></span><br>
-        <span id="quote-author"></span>
-    </section>
-</div>
+            <!-- Main Content -->
+            <div class="main-content">
+                <!-- Introduction -->
+                <section class="intro-section">
+                    <h2>Hi, I'm Manakin</h2>
+                    <p>
+                        I'm an IT student and a passionate programmer who enjoys coding and solving problems as well as discovering new concepts, technology, libraries and applying them. My field of interests range from OOP to algorithms.
+                    </p>
+                </section>
 
+                <!-- Skills -->
+                <section class="skills-section">
+                    <h2>Programming Languages & Tools</h2>
+                    <div class="skills-grid">
+                        <div class="skill-box">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                            JavaScript
+                        </div>
+                        <div class="skill-box">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />
+                            HTML
+                        </div>
+                        <div class="skill-box">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" />
+                            Python
+                        </div>
+                        <div class="skill-box">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
+                            CSS
+                        </div>
+                        <div class="skill-box">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
+                            C#
+                        </div>
+                        <div class="skill-box">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
+                            Java</div>
+                        <div class="skill-box">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
+                            MySQL</div>
+                        <div class="skill-box">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg" />
+                            MongoDB</div>
 
+                    </div>
+                    <h2>Technologies</h2>
+                    <div class="skills-grid">
+                        <div class="skill-box">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg" />
+                            Git</div>
+                        <div class="skill-box">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg" />
+                            Docker</div>
+                        <div class="skill-box">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg" />
+                            Node.js
+                </section>
 
+                <!-- 3. Projects -->
+                <section class="projects-section">
+                    <h2>Projects</h2>
+                    <div class="project-card">
+                        <h3>JavaScript Algorithms</h3>
+                        <p>
+                            A collection of algorithms implemented in JavaScript for informational and demonstrational purposes.
+                        </p>
+                        <a href="https://github.com/manakin404/js-algorithms" target="_blank" class="project-link">
+                            See on GitHub →
+                        </a>
+                    </div>
+                    <!-- Possibility to add more projects here -->
+                </section>
+            </div>
+        </div>
 
-<script src="scripts/quote.js"></script>
-
-</body>
+        <!-- Load scripts -->
+        <script src="scripts/quote.js"></script>
+    </body>
 </html>

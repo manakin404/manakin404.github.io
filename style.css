@@ -4,59 +4,162 @@ html {
 }
 
 body {
+    font-family:
+        "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", Verdana, Arial,
+        Overpass;
     margin: 0;
-    height: 100vh;
-    background: linear-gradient(
-    to top, #09203f 0%,
-    #537895 100%
-        /* former gradients:
-        rgb(230, 100, 101), 
-        rgb(145, 152, 229)
-        */
-    ) fixed;
+    min-height: 100vh;
+    background: linear-gradient(to top, #09203f 0%, #537895 100%) fixed;
     overflow: auto;
-}
-
-#container {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-button {
-    font-family: Overpass;
-    border: solid 3px black;
-    border-radius: 15%;
-    background: transparent;
-    
-}
-
-#avatarhead {
-    padding: 100px 0 0 0;
-    text-align: center;
-}
-
-#profileimage {
-    border-radius: 20%;
-}
-
-#username {
-    font-family: monospace;
-    text-decoration: none;
     color: white;
 }
 
-#quote-text, #quote-author{
-    font-family:
-        'Lucida Sans', 
-        'Lucida Sans Regular', 
-        'Lucida Grande',
-        Verdana,
-        Arial, 
-        Overpass;
-    font-display: Arial; 
+/* Two column layout */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Left sidebar */
+.sidebar {
+    min-height: 100vh;
+    height: auto;
+    width: 300px;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.profile-section {
+    text-align: center;
+}
+
+.profile-image {
+    border-radius: 20%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.username {
+    font-family: monospace;
+    margin: 1rem 0;
+}
+
+.github-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid white;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.github-button:hover {
+    background: white;
+    color: #09203f;
+}
+
+/* Quotes section */
+.quote-section {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
 }
 
 #quote-text {
     font-style: oblique;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+#quote-author {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Right Main Content */
+.main-content {
+    flex: 1;
+    padding: 2rem;
+    overflow-y: auto;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+/* Skills grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, max-content));
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: start;
+}
+
+.skill-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.75rem;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.skills-box img {
+    height: 3rem;
+    width: 3rem;
+}
+
+/* Project cards */
+.project-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.project-link {
+    color: #87ceeb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+/* Adjustments for mobile devices */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        min-height: auto;
+        box-sizing: border-box;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .main-content {
+        padding: 1rem;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
 }
